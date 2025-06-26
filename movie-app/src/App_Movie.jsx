@@ -6,7 +6,7 @@ const [movies, setMovies] = useState([]);
 const getMovies = async () => {
 // localhost:8080 은 나중에 ALB 생성 후 DNS 로 변경 예정
 // const response = await fetch("http://localhost:8080")
-const response = await fetch("http://kostajyb.kro.kr:8080")
+const response = await fetch("https://boot.kostajyb.kro.kr")
 const json = await response.json();
 setMovies(json.movies);
 setIsLoading(false);
