@@ -17,7 +17,7 @@ getMovies();
 return (
 <>
 <h1>Movie App !</h1>
-<h2>success</h2>
+<h2>success1</h2>
 {isLoading ? "로딩중..." :
 <div>
 {movies.map( movie => <Movie key={movie.id}
